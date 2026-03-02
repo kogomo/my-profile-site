@@ -1,0 +1,24 @@
+# Claude Code AI 도구 설정
+.claude/
+
+# 도구/메모리 메타데이터 (docs 폴더 내)
+docs/.bkit-memory.json
+docs/.pdca-status.json
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 에디터 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 로그
+*.log
+npm-debug.log*
+
+# 의존성 (향후 Node.js 사용 시)
+node_modules/

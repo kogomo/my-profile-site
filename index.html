@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김일권 - 생산관리 전문가</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts - Noto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <style>
+    * {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-md transition-shadow duration-300 border-b border-gray-100" id="navbar">
+    <div class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-black text-purple-700 tracking-tight">
+        김일권
+      </div>
+
+      <!-- Desktop Menu (오른쪽 정렬) -->
+      <div class="hidden md:flex gap-10 ml-auto">
+        <a href="#about" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold text-[15px] tracking-wide">About</a>
+        <a href="#career" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold text-[15px] tracking-wide">Career</a>
+        <a href="#skills" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold text-[15px] tracking-wide">Skills</a>
+        <a href="#projects" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold text-[15px] tracking-wide">Projects</a>
+        <a href="#certifications" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold text-[15px] tracking-wide">Certifications</a>
+        <a href="#contact" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold text-[15px] tracking-wide">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-purple-600" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-5">
+        <a href="#about" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold">About</a>
+        <a href="#career" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold">Career</a>
+        <a href="#skills" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold">Skills</a>
+        <a href="#projects" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold">Projects</a>
+        <a href="#certifications" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold">Certifications</a>
+        <a href="#contact" class="nav-link text-gray-800 hover:text-purple-600 transition font-semibold">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-blue-700 via-purple-700 to-blue-800 text-white text-center min-h-screen flex flex-col justify-center items-center" id="hero">
+    <div class="max-w-4xl mx-auto px-4 reveal">
+      <h1 class="text-7xl font-black mb-4 leading-tight">
+        김일권
+      </h1>
+      <p class="text-2xl font-semibold mb-6 text-purple-200">
+        생산관리 전문가 | Production Manager
+      </p>
+
+      <!-- Keywords -->
+      <div class="flex flex-wrap gap-3 justify-center mb-12">
+        <span class="bg-purple-500/30 border border-purple-300 px-4 py-2 rounded-full text-sm font-medium">
+          #30년 경력
+        </span>
+        <span class="bg-purple-500/30 border border-purple-300 px-4 py-2 rounded-full text-sm font-medium">
+          #조선·플랜트
+        </span>
+        <span class="bg-green-400/30 border border-green-300 px-4 py-2 rounded-full text-sm font-medium">
+          #API570
+        </span>
+        <span class="bg-purple-500/30 border border-purple-300 px-4 py-2 rounded-full text-sm font-medium">
+          #베트남 공장장
+        </span>
+      </div>
+
+      <!-- Scroll Arrow Animation -->
+      <div class="flex justify-center">
+        <div class="animate-bounce">
+          <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center text-blue-900">About Me</h2>
+
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="reveal bg-blue-50 p-8 rounded-lg text-center border-l-4 border-purple-600">
+          <div class="text-4xl font-bold text-purple-600 mb-2">30+</div>
+          <p class="text-gray-700">년 경력</p>
+        </div>
+        <div class="reveal bg-blue-50 p-8 rounded-lg text-center border-l-4 border-green-400">
+          <div class="text-4xl font-bold text-green-400 mb-2">10+</div>
+          <p class="text-gray-700">다국적 현장 경험</p>
+        </div>
+        <div class="reveal bg-blue-50 p-8 rounded-lg text-center border-l-4 border-purple-600">
+          <div class="text-4xl font-bold text-purple-600 mb-2">1+</div>
+          <p class="text-gray-700">자격증 보유</p>
+        </div>
+      </div>
+
+      <!-- Introduction Text -->
+      <div class="reveal bg-blue-50 p-8 rounded-lg">
+        <p class="text-lg leading-relaxed text-gray-800 mb-6">
+          조선, 플랜트, 해양산업 전문가로서 30년 이상의 경력을 보유하고 있습니다.
+          국내외 현장에서 생산관리, 품질관리, 자재조달 등 다양한 분야를 총괄해왔으며,
+          베트남 현지 공장장으로서 국제적 경영 능력을 갖추고 있습니다.
+        </p>
+        <h3 class="text-xl font-bold text-purple-600 mb-4">핵심 역할</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>✓ 생산 공정 관리 및 최적화</li>
+          <li>✓ 품질 관리 및 국제 표준 준수</li>
+          <li>✓ 다국적 팀 리더십 및 경영</li>
+          <li>✓ 해외 사업 전개 및 수출 관리</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Timeline Section -->
+  <section id="career" class="py-20 bg-blue-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center text-blue-900">Career Timeline</h2>
+
+      <div class="timeline">
+        <!-- Career Item 1 -->
+        <div class="reveal timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-xl font-bold text-purple-600">현재</h3>
+            <p class="text-gray-700 font-semibold">조선·플랜트 배관·철구조물 생산관리</p>
+            <p class="text-gray-600 text-sm">배관, 철구조물 등 주요 공정의 생산관리 총괄</p>
+          </div>
+        </div>
+
+        <!-- Career Item 2 -->
+        <div class="reveal timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-xl font-bold text-purple-600">태광실업</h3>
+            <p class="text-gray-700 font-semibold">베트남 공장장</p>
+            <p class="text-gray-600 text-sm">베트남 현지 공장 운영 및 국제 경영</p>
+          </div>
+        </div>
+
+        <!-- Career Item 3 -->
+        <div class="reveal timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-xl font-bold text-purple-600">태광실업</h3>
+            <p class="text-gray-700 font-semibold">영업·기술·품질·공장장</p>
+            <p class="text-gray-600 text-sm">다부문 경영 및 전사 생산 총괄</p>
+          </div>
+        </div>
+
+        <!-- Career Item 4 -->
+        <div class="reveal timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-xl font-bold text-purple-600">동성화학</h3>
+            <p class="text-gray-700 font-semibold">재무·해외영업</p>
+            <p class="text-gray-600 text-sm">국제 무역 및 해외 사업 개발</p>
+          </div>
+        </div>
+
+        <!-- Career Item 5 -->
+        <div class="reveal timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-xl font-bold text-purple-600">부산대학교</h3>
+            <p class="text-gray-700 font-semibold">경영학과 졸업</p>
+            <p class="text-gray-600 text-sm">경영학 기초 학위 취득</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center text-blue-900">Skills & Expertise</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Production Management -->
+        <div class="reveal">
+          <h3 class="text-xl font-bold text-purple-600 mb-4">생산관리 전문역량</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
+              <span>공정관리 및 최적화</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
+              <span>품질관리 (QC/QA)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
+              <span>자재조달 및 재고관리</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
+              <span>용접/도장 공정 관리</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
+              <span>조선/플랜트 생산관리</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
+              <span>선박모듈 생산 관리</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="reveal">
+          <h3 class="text-xl font-bold text-purple-600 mb-4">리더십 & 경영역량</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-purple-600 rounded-full"></span>
+              <span>공장장 운영 경험</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-purple-600 rounded-full"></span>
+              <span>재무 관리</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-purple-600 rounded-full"></span>
+              <span>해외영업 및 수출 관리</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-purple-600 rounded-full"></span>
+              <span>다국적팀 리더십</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-purple-600 rounded-full"></span>
+              <span>국제 비즈니스 전개</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="inline-block w-3 h-3 bg-purple-600 rounded-full"></span>
+              <span>조직 문화 구축</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="mt-12">
+        <h3 class="text-xl font-bold text-purple-600 mb-4 text-center">기술 스택</h3>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded-full font-semibold">HTML</span>
+          <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded-full font-semibold">CSS</span>
+          <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded-full font-semibold">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-blue-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center text-blue-900">Projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="reveal bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:shadow-purple-200/50">
+          <div class="h-40 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+            <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-purple-600 mb-2">조선·플랜트 배관 생산관리</h3>
+            <p class="text-gray-600 leading-relaxed">
+              배관, 철구조물 등 주요 공정의 생산 일정, 품질, 안전 전반을 관리하며 국제 표준 준수 및 고객 만족도 향상에 기여.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="reveal bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:shadow-purple-200/50">
+          <div class="h-40 bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center">
+            <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15.863 13H18a2 2 0 012 2v4a2 2 0 01-2 2h-3.097a2.5 2.5 0 01-2.5-2.5v-2.5a2.5 2.5 0 012.5-2.5h1.597a2 2 0 002-2zM4 20h16"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-purple-600 mb-2">베트남 현지 공장 운영</h3>
+            <p class="text-gray-600 leading-relaxed">
+              베트남 법인의 생산·판매를 총괄하며 현지 조직 구축, 국제 표준 도입, 비용 최적화 등으로 사업 확대 달성.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="reveal bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:shadow-purple-200/50">
+          <div class="h-40 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+            <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-purple-600 mb-2">선박모듈 생산 프로젝트</h3>
+            <p class="text-gray-600 leading-relaxed">
+              대형 선박 모듈의 설계부터 납입까지 전 프로세스를 관리하여 일정 준수, 품질 우수, 원가 절감 달성.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center text-blue-900">Certifications & Education</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Certification Card -->
+        <div class="reveal bg-gradient-to-br from-yellow-50 to-green-50 p-8 rounded-lg border-l-4 border-green-400">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">🏆</div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-1">API 570</h3>
+              <p class="text-gray-700">배관 검사원 자격증</p>
+              <p class="text-sm text-gray-600 mt-2">미국 석유학회(API) 공인 배관 검사원 자격으로 국제 표준 준수 능력 입증</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="reveal bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-lg border-l-4 border-purple-600">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">🎓</div>
+            <div>
+              <h3 class="text-xl font-bold text-purple-700 mb-1">부산대학교</h3>
+              <p class="text-gray-700">경영학과 졸업</p>
+              <p class="text-sm text-gray-600 mt-2">경영학 기초 이론 및 실무 지식을 습득하여 비즈니스 리더십 역량 강화</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-blue-950 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg text-purple-200 mb-12">
+        새로운 기회와 협력을 환영합니다. 편하게 연락주세요.
+      </p>
+
+      <div class="reveal bg-white/10 backdrop-blur-md rounded-lg p-10 border border-purple-400/20 flex flex-col items-center gap-8">
+        <p class="text-2xl font-semibold">kogomo@gmail.com</p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <button id="copy-email" class="bg-green-400 hover:bg-green-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors duration-200">
+            이메일 복사
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-white py-16 px-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-gray-400">
+        © 2024 김일권. All rights reserved.
+      </p>
+      <p class="text-gray-500 text-sm mt-2">
+        생산관리 전문가 | 조선·플랜트 업계 경력 30년+
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hidden transition-opacity duration-300">
+    이메일이 복사되었습니다!
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
