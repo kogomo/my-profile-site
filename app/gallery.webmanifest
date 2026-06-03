@@ -1,0 +1,24 @@
+{
+  "name": "갤러리",
+  "short_name": "갤러리",
+  "start_url": "gallery.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#141414",
+  "theme_color": "#1b1b1b",
+  "icons": [
+    {
+      "src": "icons/gallery_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/gallery_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

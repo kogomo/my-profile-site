@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>갤러리</title>
+<link rel="manifest" href="gallery.webmanifest">
+<link rel="icon" href="icons/gallery_192.png">
+<link rel="apple-touch-icon" href="icons/gallery_180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="갤러리">
+<meta name="theme-color" content="#1b1b1b">
+<style>
+  html,body{margin:0;height:100%;background:#141414;color:#e8e8e8;
+    font-family:-apple-system,BlinkMacSystemFont,'Pretendard','Apple SD Gothic Neo',sans-serif}
+  a.wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-decoration:none;color:inherit}
+  img{width:120px;height:120px;border-radius:26px;box-shadow:0 8px 28px rgba(0,0,0,.55)}
+  .t{font-size:20px;font-weight:800;color:#fff}
+  .s{font-size:13px;color:#9a9a9a}
+  .go{margin-top:4px;padding:12px 30px;border-radius:999px;background:#b01419;color:#fff;font-weight:700;font-size:15px}
+  .hint{position:fixed;bottom:16px;left:0;right:0;text-align:center;font-size:11.5px;color:#777;padding:0 22px;line-height:1.6}
+</style>
+</head>
+<body>
+<a class="wrap" href="https://script.google.com/macros/s/AKfycbwSjxXI6r-GoDvWlsh6c5f_w85FJq2D0ebFPr8nzb_dd2hq3fN0mM-KrE-M4zeJcjWB/exec?view=gallery">
+  <img src="icons/gallery_192.png" alt="갤러리">
+  <div class="t">갤러리</div>
+  <div class="s">AIJEI 대시보드 열기</div>
+  <div class="go">열기</div>
+</a>
+<div class="hint">홈 화면에 추가: Chrome 메뉴(⋮) → "홈 화면에 추가" / "앱 설치"</div>
+<script>
+  var TARGET = "https://script.google.com/macros/s/AKfycbwSjxXI6r-GoDvWlsh6c5f_w85FJq2D0ebFPr8nzb_dd2hq3fN0mM-KrE-M4zeJcjWB/exec?view=gallery";
+  var standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  if (standalone) { location.replace(TARGET); }
+  if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
+</script>
+</body>
+</html>
