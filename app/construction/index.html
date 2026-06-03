@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>진도추적</title>
-<link rel="manifest" href="tracker.webmanifest">
-<link rel="icon" href="icons/tracker_192.png">
-<link rel="apple-touch-icon" href="icons/tracker_180.png">
+<title>공사현황</title>
+<link rel="manifest" href="app.webmanifest">
+<link rel="icon" href="icons/192.png">
+<link rel="apple-touch-icon" href="icons/180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="진도추적">
+<meta name="apple-mobile-web-app-title" content="공사현황">
 <meta name="theme-color" content="#1b1b1b">
 <style>
   html,body{margin:0;height:100%;background:#141414;color:#e8e8e8;
@@ -23,15 +23,15 @@
 </style>
 </head>
 <body>
-<a class="wrap" href="https://script.google.com/macros/s/AKfycbyzkP730FFzsaMldZdiPpNnIyNw8zqM7ZXwArfoi1SW52cqfWAgbnOBiXhvAS09_x0m/exec">
-  <img src="icons/tracker_192.png" alt="진도추적">
-  <div class="t">진도추적</div>
+<a class="wrap" href="https://script.google.com/macros/s/AKfycbwu8pPTd7zJZ8VAXeNlAUrsHnOHUOJ6Bw3BjaKpWHNNHLL_qSYmQFuzx4mgxtbXSzxE/exec?view=construction">
+  <img src="icons/192.png" alt="공사현황">
+  <div class="t">공사현황</div>
   <div class="s">AIJEI 대시보드 열기</div>
   <div class="go">열기</div>
 </a>
 <div class="hint">홈 화면에 추가: Chrome 메뉴(⋮) → "홈 화면에 추가" / "앱 설치"</div>
 <script>
-  var TARGET = "https://script.google.com/macros/s/AKfycbyzkP730FFzsaMldZdiPpNnIyNw8zqM7ZXwArfoi1SW52cqfWAgbnOBiXhvAS09_x0m/exec";
+  var TARGET = "https://script.google.com/macros/s/AKfycbwu8pPTd7zJZ8VAXeNlAUrsHnOHUOJ6Bw3BjaKpWHNNHLL_qSYmQFuzx4mgxtbXSzxE/exec?view=construction";
   var standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   if (standalone) { location.replace(TARGET); }
   if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }

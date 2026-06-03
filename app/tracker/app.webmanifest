@@ -1,7 +1,8 @@
 {
-  "name": "갤러리2",
-  "short_name": "갤러리2",
-  "start_url": "gallery2.html",
+  "id": "./",
+  "name": "진도추적",
+  "short_name": "진도추적",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
@@ -9,13 +10,13 @@
   "theme_color": "#1b1b1b",
   "icons": [
     {
-      "src": "icons/gallery2_192.png",
+      "src": "icons/192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/gallery2_512.png",
+      "src": "icons/512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

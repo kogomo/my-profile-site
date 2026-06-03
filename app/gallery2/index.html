@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>수주</title>
-<link rel="manifest" href="pipeline.webmanifest">
-<link rel="icon" href="icons/pipeline_192.png">
-<link rel="apple-touch-icon" href="icons/pipeline_180.png">
+<title>갤러리2</title>
+<link rel="manifest" href="app.webmanifest">
+<link rel="icon" href="icons/192.png">
+<link rel="apple-touch-icon" href="icons/180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="수주">
+<meta name="apple-mobile-web-app-title" content="갤러리2">
 <meta name="theme-color" content="#1b1b1b">
 <style>
   html,body{margin:0;height:100%;background:#141414;color:#e8e8e8;
@@ -23,15 +23,15 @@
 </style>
 </head>
 <body>
-<a class="wrap" href="https://script.google.com/macros/s/AKfycbwp-p4AcMlggQTmKU3_sRQ4Q6B5yuERxJzQwuq05yz5aE4cxmBp-A9EISJ1TWB6fp7Ygw/exec">
-  <img src="icons/pipeline_192.png" alt="수주">
-  <div class="t">수주</div>
+<a class="wrap" href="https://script.google.com/macros/s/AKfycbyHmwWRpvUcC44Hib27HiujtmHFLyzsmF3DsdP_HiVS4SpgemmSUlpCy1WALpuUGU0/exec?view=gallery">
+  <img src="icons/192.png" alt="갤러리2">
+  <div class="t">갤러리2</div>
   <div class="s">AIJEI 대시보드 열기</div>
   <div class="go">열기</div>
 </a>
 <div class="hint">홈 화면에 추가: Chrome 메뉴(⋮) → "홈 화면에 추가" / "앱 설치"</div>
 <script>
-  var TARGET = "https://script.google.com/macros/s/AKfycbwp-p4AcMlggQTmKU3_sRQ4Q6B5yuERxJzQwuq05yz5aE4cxmBp-A9EISJ1TWB6fp7Ygw/exec";
+  var TARGET = "https://script.google.com/macros/s/AKfycbyHmwWRpvUcC44Hib27HiujtmHFLyzsmF3DsdP_HiVS4SpgemmSUlpCy1WALpuUGU0/exec?view=gallery";
   var standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   if (standalone) { location.replace(TARGET); }
   if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
